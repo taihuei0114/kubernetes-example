@@ -1,14 +1,14 @@
 stages:
   - build
 
-image: docker:20.10.16
+image: docker:24.0.5
 
 variables:
   DOCKER_TLS_CERTDIR: "/certs"
-  DOCKERHUB_USERNAME: "lyzhang1999"
+  DOCKERHUB_USERNAME: "taihuei0114"
 
 services:
-  - docker:20.10.16-dind
+  - docker:24.0.5-dind
 
 before_script:
   - docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_TOKEN
