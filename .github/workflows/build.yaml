@@ -4,9 +4,8 @@ on:
   push:
     branches:
       - "main"
-
 env:
-  DOCKERHUB_USERNAME: lyzhang1999
+  DOCKERHUB_USERNAME: taihuei0114
 
 jobs:
   docker:

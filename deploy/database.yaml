@@ -1,13 +1,12 @@
 apiVersion: v1
 data:
   CreateDB.sql: |-
-    CREATE TABLE text (
-        id serial PRIMARY KEY,
-        text VARCHAR ( 100 ) UNIQUE NOT NULL
-    );
-kind: ConfigMap
+    Q1JFQVRFIFRBQkxFIHRleHQgKAogICAgICAgIGlkIHNlcmlhbCBQUklNQVJZIEtFWSwKICAgICAgICB0ZXh0IFZBUkNIQVIgKCAxMDAgKSBVTklRVUUgTk9UIE5VTEwpOw==
+kind: Secret
 metadata:
   name: pg-init-script
+  namespace: example
+type: Opaque
 ---
 apiVersion: apps/v1
 kind: Deployment
